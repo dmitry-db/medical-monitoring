@@ -4,6 +4,7 @@ import liga.medical.medicalmonitoring.core.model.entity.MedicalHistory;
 import liga.medical.medicalmonitoring.dto.MedicalHistoryDto;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Component;
+
 import java.util.Objects;
 
 @Component

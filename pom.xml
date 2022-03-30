@@ -9,7 +9,7 @@
         <version>0.0.1</version>
     </parent>
 
-    <version>0.0.1</version>
+
     <artifactId>medical-monitoring</artifactId>
     <packaging>pom</packaging>
 
