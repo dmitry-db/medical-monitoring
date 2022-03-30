@@ -3,6 +3,7 @@ package liga.medical.medicalmonitoring.core.mapper;
 import liga.medical.medicalmonitoring.core.model.entity.Patient;
 import liga.medical.medicalmonitoring.dto.PatientDto;
 import org.modelmapper.ModelMapper;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.util.Objects;
@@ -10,6 +11,7 @@ import java.util.Objects;
 @Component
 public class PatientMapper {
 
+    @Autowired
     ModelMapper modelMapper;
 
     public Patient toEntity(PatientDto dto) {

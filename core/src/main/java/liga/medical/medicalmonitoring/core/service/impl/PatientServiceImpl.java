@@ -1,5 +1,6 @@
 package liga.medical.medicalmonitoring.core.service.impl;
 
+import liga.medical.medicalmonitoring.core.mapper.PatientMapper;
 import liga.medical.medicalmonitoring.core.model.entity.Patient;
 import liga.medical.medicalmonitoring.core.repository.PatientRepository;
 import liga.medical.medicalmonitoring.core.service.PatientService;
@@ -15,6 +16,7 @@ import java.util.List;
 public class PatientServiceImpl implements PatientService {
 
     private final PatientRepository patientRepository;
+    private final PatientMapper mapper;
 
     public Patient findById(Long id) {
         return patientRepository.findById(id).orElse(null);

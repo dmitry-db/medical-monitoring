@@ -1,6 +1,5 @@
 package liga.medical.medicalmonitoring.core.config;
 
-import lombok.Data;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.amqp.core.AmqpAdmin;
@@ -39,18 +38,6 @@ public class RabbitConfiguration {
     //Очередь с названием
     @Bean
     public Queue appQueue() {
-        return new Queue("appQueue");
+        return new Queue("patient-alert");
     }
-
-    //Получатель сообщений, читающий очереди
-//    @Bean
-//    public SimpleMessageListenerContainer messageListenerContainer() {
-//        SimpleMessageListenerContainer container = new SimpleMessageListenerContainer();
-//        container.setConnectionFactory(connectionFactory());
-//        container.setQueueNames("appQueue");
-//        container.setMessageListener(message -> logger.info("Recieved from appQueue : "
-//                + new String(message.getBody())));
-//        return container;
-//    }
-
 }
