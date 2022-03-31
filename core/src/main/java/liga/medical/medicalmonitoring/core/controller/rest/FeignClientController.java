@@ -17,11 +17,6 @@ public class FeignClientController {
         this.feignClientService = feignClientService;
     }
 
-    @GetMapping
-    public String prost() {
-        return "Hello";
-    }
-
     @GetMapping("/{id}")
     public PersonDto getFindId(@PathVariable Long id) {
         return feignClientService.getPersonById(id);
