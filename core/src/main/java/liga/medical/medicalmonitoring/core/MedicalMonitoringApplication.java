@@ -11,7 +11,7 @@ import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-@EnableFeignClients
+@EnableFeignClients(value = "liga.medical.medicalmonitoring.core.feignclient")
 public class MedicalMonitoringApplication {
 
     @Bean
