@@ -1,6 +1,6 @@
 package liga.medical.medicalmonitoring.core.controller.rest;
 
-import liga.medical.medicalmonitoring.core.service.FeignClientService;
+import liga.medical.medicalmonitoring.core.service.impl.FeignClientService;
 import liga.medical.personservice.dto.PersonDto;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

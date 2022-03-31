@@ -1,4 +1,4 @@
-package liga.medical.medicalmonitoring.core.service;
+package liga.medical.medicalmonitoring.core.service.impl;
 
 import liga.medical.medicalmonitoring.core.feignclient.PersonFeignClient;
 import liga.medical.personservice.dto.PersonDto;
