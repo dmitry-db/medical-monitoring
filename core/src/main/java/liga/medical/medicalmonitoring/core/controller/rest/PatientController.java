@@ -4,8 +4,6 @@ import liga.medical.medicalmonitoring.core.exception_handling.patients.patient_e
 import liga.medical.medicalmonitoring.core.model.entity.Patient;
 import liga.medical.medicalmonitoring.core.service.impl.PatientServiceImpl;
 import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PatchMapping;
@@ -17,8 +15,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-@Slf4j
-@RefreshScope
+//@Slf4j
+//@RefreshScope
 @RestController
 @RequestMapping("api/patients")
 @RequiredArgsConstructor
