@@ -6,6 +6,7 @@ import liga.medical.medicalmonitoring.core.repository.MedicalHistoryRepository;
 import liga.medical.medicalmonitoring.core.service.MedicalHistoryService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
